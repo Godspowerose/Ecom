@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fafaf2;
+}
+header {
+    background-color: #ffffff;
+    /* position: fixed;
+    width: 100%; */
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    /* background-color: #ffffff; */
+    /* position: fixed;
+    width: 100%; */
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 100px;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+}
+.hero-banner {
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('https://ugmonk.com/cdn/shop/files/gather-hero-home-page-3_36d4d054-704c-486e-abb2-aaa01420d1a5.jpg?v=1665688296&width=3000');
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-size: cover;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* margin-top: 20px; */
+}
+.hero-text {
+    padding-left: 60px;
+    color: white;
+    font-size: 25px;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.third img {
+    width: 400px;
+    height: 300px;
+    /* border: 1px solid black; */
+    border-radius: 13px;
+    box-shadow: 0 0 9px -4px #0e0e0e;
+    /* margin: 10px; */
+    cursor: pointer;
+    transition: 400ms;
+    margin-top: 30px;
+}
+.third img:hover {
+    filter: grayscale(1);
+    transform: scale(1.03);
+}
+.third p {
+    margin: 5px 0;
+}
+.third {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 60px;
+    background-color: #ecf1e1;
+    margin-top: 30px;
+}
+
+/* .forth {
+    display: grid;
+    grid-gap: .5em;
+    grid-template-areas: 
+        "photoOne photoTwo photothree"
+        "photoOne photoFour photoFive";
+    grid-template-columns: 1fr 20% 20%;
+}
+.forth div {
+    border: 2px solid black;
+}
+.forth div:first-child {
+    grid-area: photoOne;
+    height: 300px;
+} */
+.forth {
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    gap: 100px;
+    align-items: center;
+    width: 65%;
+    margin: auto;
+    margin-top: 30px;
+    font-size: 20px;
+    padding: 5px;
+    background-color: #eae7d9;
+}
+.forth ol {
+    list-style: none;
+}
+.forth img {
+    width: 400px;
+    height: 300px;
+    border: 1px solid black;
+}
+/* main .forth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+footer {
+    background-color: #d9e2c3;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    margin-top: 20px;
+    color: #000000;
+}
+.second {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+.hero-text button {
+    background-color: #ffd879;
+    color: black;
+    border: 1px solid black;
+    border-radius: 50px;
+    padding: 10px 60px;
+    margin-top: 20px;
+}
+.hero-text button:hover {
+    background-color: #000000;
+    color: #ffd879;
+}
+.write-up button {
+    background-color: #ffd879;
+    color: black;
+    border: 1px solid black;
+    border-radius: 50px;
+    padding: 10px 60px;
+    margin-top: 30px;
+}
+.write-up button:hover {
+    background-color: #000000;
+    color: #ffd879;
+}
+hr{
+    margin-top: 50px;
+}
+.form {
+    display: grid;
+    place-items: center;
+    margin-top: 30px;
+}
+input, textarea {
+    width: 400px;
+    height: 35px;
+    margin-top: 15px;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #d9e2c3;
+}
+
+.form button {
+    width: 410px;
+    background-color: #ffd879;
+    border: 1px solid black;
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin-top: 25px;
+}
+.form button:hover {
+    background-color: #000000;
+    color: #ffd879;
+}
+.form h1 {
+    font-size: 30px;
+}
+.box {
+    min-height: 100px;
+    resize: vertical;
+    padding-top: 10px;
+}
+.hamburger {
+    display: none;
+}
+/* Responsiveness for Tablets */
+@media (max-width: 768px) { 
+    .forth {
+        gap: 10px;
+        width: 78%;
+    }
+    /* .third {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    } */
+}
+
+
+/* Responsiveness for Smartphones */
+@media (max-width: 420px) {
+    nav ul {
+        display: none;
+    }
+    nav {
+        padding: 20px;
+    }
+    .hamburger {
+        display: block;
+    }
+    .cart {
+        padding-left: 70px;
+    }
+    .hero-banner {
+        height: 500px;
+    }
+    .hero-text {
+        display: grid;
+        place-items: center;
+        font-size: 30px;
+        padding: 20px;
+    }
+    .hero-text button {
+        padding: 20px 70px;
+    }
+    .second {
+        text-align: center;
+    }
+    .third {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .third img {
+        width: 100%;
+        height: auto
+    }
+    .forth {
+        display: grid;
+        padding: 30px;
+        place-items: center;
+        margin-top: 70px;
+    }
+    .forth img {
+        width: 100%;
+    }
+    .write-up {
+        display: grid;
+        place-items: center;
+    }
+    input, textarea {
+        width: 320px;
+        height: 40px;
+    }
+    .form button {
+        width: 340px;
+    }
+}
